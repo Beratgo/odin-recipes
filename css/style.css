@@ -1,0 +1,84 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+ input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+ }
+
+ #root, #__next {
+    isolation: isolate;
+}
+
+/* CSS Start */
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0px;
+    background-color: bisque;
+    text-align: center;
+}
+
+.title{
+    padding: 0px 0px 10px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.showcase{
+    display: inline-block;
+    width: 300px;
+    position: relative;
+}
+
+.showcase:hover{
+    filter: opacity(80%);
+}
+
+.showcase img{
+    height: 300px;
+}
+
+.list-text{
+    position: absolute;
+    bottom: 0; /* Position the text at the bottom of the parent container */
+    left: 0;
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.disclaimer{
+    padding: 10px 0px 0px;
+}
